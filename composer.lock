@@ -1,0 +1,61 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "9c0a6fdf89e621efdd8b7a669841e4fe",
+    "packages": [
+        {
+            "name": "dunn/dunn-server",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dunneeee/DunnServer.git",
+                "reference": "25c5ad0bc3dda906ac94112d6393100dcdd36976"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dunneeee/DunnServer/zipball/25c5ad0bc3dda906ac94112d6393100dcdd36976",
+                "reference": "25c5ad0bc3dda906ac94112d6393100dcdd36976",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.2.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "DunnServer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "dunn",
+                    "email": "corepper03@gmail.com"
+                }
+            ],
+            "support": {
+                "issues": "https://github.com/dunneeee/DunnServer/issues",
+                "source": "https://github.com/dunneeee/DunnServer/tree/main"
+            },
+            "time": "2024-05-20T02:48:34+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "dunn/dunn-server": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.6.0"
+}
