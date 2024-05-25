@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/baseline_home_24"
+        android:title="Trang chủ" />
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/baseline_account_circle_24"
+        android:title="Tôi" />
+    <item
+        android:id="@+id/adminFragment"
+        android:icon="@drawable/baseline_format_list_bulleted_24"
+        android:title="Admin" />
+    <item
+        android:id="@+id/uploadFragment"
+        android:icon="@drawable/baseline_format_list_bulleted_24"
+        android:title="Upload" />
+
+</menu>
