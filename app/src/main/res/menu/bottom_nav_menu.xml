@@ -16,5 +16,9 @@
         android:id="@+id/uploadFragment"
         android:icon="@drawable/baseline_format_list_bulleted_24"
         android:title="Upload" />
+    <item
+        android:id="@+id/videoUploadFragment"
+        android:icon="@drawable/baseline_home_24"
+        android:title="Upload Video" />
 
 </menu>

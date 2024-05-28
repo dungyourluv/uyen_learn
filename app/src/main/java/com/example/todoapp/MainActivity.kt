@@ -39,6 +39,10 @@ class MainActivity : AppCompatActivity() {
                 R.id.uploadFragment -> {
                     navController.navigate(R.id.uploadPostFragment)
                 }
+
+                R.id.videoUploadFragment -> {
+                    navController.navigate(R.id.uploadVideoFragment)
+                }
             }
             true
         }

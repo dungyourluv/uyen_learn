@@ -5,6 +5,8 @@ import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.graphics.drawable.BitmapDrawable
 import android.graphics.drawable.Drawable
+import android.net.Uri
+import android.provider.MediaStore
 import android.widget.ImageView
 import android.widget.Toast
 import kotlinx.coroutines.CoroutineScope
@@ -34,6 +36,29 @@ object Utils {
             }
         }
     }
+
+    fun getRealPathFromURI(context: Context, contentUri: Uri): String {
+        val proj = arrayOf(MediaStore.Images.Media.DATA)
+        val cursor = context.contentResolver.query(contentUri, proj, null, null, null)!!
+        val columnIndex = cursor.getColumnIndexOrThrow(MediaStore.Images.Media.DATA)
+        cursor.moveToFirst()
+        val path = cursor.getString(columnIndex)
+        cursor.close()
+        return path
+    }
+
+    fun uriToFile(context: Context, uri: Uri): File {
+        val file = File(context.cacheDir, "image")
+        file.createNewFile()
+        context.contentResolver.openInputStream(uri)?.use { input ->
+            file.outputStream().use { output ->
+                input.copyTo(output)
+            }
+        }
+        return file
+    }
+
+
 
     fun drawableToFile(drawable: Drawable): File {
         val bitmap = (drawable as BitmapDrawable).bitmap

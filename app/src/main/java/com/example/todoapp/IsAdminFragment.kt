@@ -7,6 +7,7 @@ import androidx.navigation.fragment.findNavController
 
 open class IsAdminFragment : AuthFragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
         val authStore = AuthStore(requireContext())
         if (authStore.isAdmin().not()) {
             AlertDialog.Builder(requireContext())
@@ -17,6 +18,7 @@ open class IsAdminFragment : AuthFragment() {
                 }
                 .show()
         }
-        super.onCreate(savedInstanceState)
+
+
     }
 }

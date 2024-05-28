@@ -34,4 +34,8 @@
         android:id="@+id/uploadPostFragment"
         android:name="com.example.todoapp.UploadPostFragment">
     </fragment>
+    <fragment
+        android:id="@+id/uploadVideoFragment"
+        android:name="com.example.todoapp.VideoUploadFragment">
+    </fragment>
 </navigation>

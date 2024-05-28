@@ -9,4 +9,8 @@ object ApiServices {
         .baseUrl("http://192.168.43.36:8080/api/v1/")
         .addConverterFactory(GsonConverterFactory.create(gson))
         .build()
+    val uRetrofit = retrofit2.Retrofit.Builder()
+        .baseUrl("http://192.168.43.36:8080/")
+        .addConverterFactory(GsonConverterFactory.create(gson))
+        .build()
 }
